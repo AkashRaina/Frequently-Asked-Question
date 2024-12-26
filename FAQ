@@ -1,0 +1,215 @@
+
+<div class="container">
+       <div class="accordion">
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">How long does it take to see results with the program?
+
+</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+Results can vary depending on the individual’s dedication, prior knowledge, and implementation speed. Some participants start seeing noticeable progress within a few days of applying the techniques, while others may take several weeks to build momentum and achieve significant outcomes.
+
+
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">Is this program suitable for beginners?
+
+</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+Absolutely! AI Profit Academy is designed to cater to both beginners and experienced individuals in the digital business and AI fields. Our structured learning path ensures that newcomers receive the necessary foundational knowledge while providing advanced strategies for those with prior experience.
+
+
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">What if I encounter challenges along the way?
+
+</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+The journey to mastering AI and online profits may come with challenges. Rest assured, our expert mentors and support community are always available to provide guidance, answer questions, and help you navigate any difficulties that arise.
+
+
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">Can I access the materials forever?
+
+</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+             Yes, once you enroll in AI Profit Academy, the course materials and resources remain accessible to you indefinitely. This way, you can revisit and review the content whenever needed to refresh your knowledge or fine-tune your strategies.
+
+
+
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Are there any additional costs involved?
+
+</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+             AI Profit Academy aims to be as transparent as possible. While the core program is comprehensive and all-inclusive, there may be optional tools or software recommendations that can enhance your experience and efficiency, which are not included in the base price. However, these are not mandatory for success.
+
+
+
+            </p>
+          </div>
+        </div>
+         
+         
+           
+         
+      </div>
+    </div>
+    
+
+<style>
+
+
+
+
+
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #6403ff;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color:  #515151;
+  font-size: 1.15rem;
+  font-weight: 300;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: Poppins;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #3A01AB;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #6403ff;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 25em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 18px;
+    font-weight: 200;
+    margin: 2em 0;
+    font-family: 'Poppins';
+}
+
+
+
+</style>
+<script> const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+</script>
